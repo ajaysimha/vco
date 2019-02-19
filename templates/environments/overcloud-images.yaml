@@ -1,0 +1,73 @@
+# Generated with the following on 2018-08-09T08:43:27.819648
+#
+#   openstack overcloud container image prepare --namespace=10.12.134.15:5000 --prefix=pod2-dev-osp13-osp13_containers- --tag latest -e /usr/share/openstack-tripleo-heat-templates/environments/services-docker/octavia.yaml -e /usr/share/openstack-tripleo-heat-templates/environments/services/ironic.yaml -e /usr/share/openstack-tripleo-heat-templates/environments/services/ironic-inspector.yaml -e /usr/share/openstack-tripleo-heat-templates/environments/ceph-ansible/ceph-ansible.yaml -e /usr/share/openstack-tripleo-heat-templates/environments/disable-telemetry.yaml --set ceph_namespace=rhceph --set ceph_image=rhceph-3-rhel7 --set ceph_tag=latest --output-env-file=/home/stack/pod2-osp-d/templates/environments/overcloud-images.yaml
+#
+
+parameter_defaults:
+  DockerInsecureRegistryAddress:
+  - 10.12.134.15:5000
+  - pod2-satellite.cloud.practice.redhat.com:5000
+  DockerCephDaemonImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-rhceph-3-rhel7:latest
+  DockerCinderApiImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-cinder-api:latest
+  DockerCinderBackupImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-cinder-backup:latest
+  DockerCinderConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-cinder-api:latest
+  DockerCinderSchedulerImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-cinder-scheduler:latest
+  DockerCinderVolumeImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-cinder-volume:latest
+  DockerClustercheckConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-mariadb:latest
+  DockerClustercheckImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-mariadb:latest
+  DockerCrondConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-cron:latest
+  DockerCrondImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-cron:latest
+  DockerGlanceApiConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-glance-api:latest
+  DockerGlanceApiImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-glance-api:latest
+  DockerHAProxyConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-haproxy:latest
+  DockerHAProxyImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-haproxy:latest
+  DockerHeatApiCfnConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-heat-api-cfn:latest
+  DockerHeatApiCfnImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-heat-api-cfn:latest
+  DockerHeatApiConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-heat-api:latest
+  DockerHeatApiImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-heat-api:latest
+  DockerHeatConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-heat-api:latest
+  DockerHeatEngineImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-heat-engine:latest
+  DockerHorizonConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-horizon:latest
+  DockerHorizonImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-horizon:latest
+  DockerIronicApiConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-ironic-api:latest
+  DockerIronicApiImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-ironic-api:latest
+  DockerIronicConductorImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-ironic-conductor:latest
+  DockerIronicConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-ironic-pxe:latest
+  DockerIronicPxeImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-ironic-pxe:latest
+  DockerIscsidConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-iscsid:latest
+  DockerIscsidImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-iscsid:latest
+  DockerKeystoneConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-keystone:latest
+  DockerKeystoneImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-keystone:latest
+  DockerMemcachedConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-memcached:latest
+  DockerMemcachedImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-memcached:latest
+  DockerMysqlClientConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-mariadb:latest
+  DockerMysqlConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-mariadb:latest
+  DockerMysqlImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-mariadb:latest
+  DockerNeutronApiImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-neutron-server:latest
+  DockerNeutronConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-neutron-server:latest
+  DockerNeutronDHCPImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-neutron-dhcp-agent:latest
+  DockerNeutronL3AgentImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-neutron-l3-agent:latest
+  DockerNeutronMetadataImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-neutron-metadata-agent:latest
+  DockerNovaApiImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-nova-api:latest
+  DockerNovaComputeImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-nova-compute:latest
+  DockerNovaComputeIronicImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-nova-compute-ironic:latest
+  DockerNovaConductorImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-nova-conductor:latest
+  DockerNovaConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-nova-api:latest
+  DockerNovaConsoleauthImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-nova-consoleauth:latest
+  DockerNovaLibvirtConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-nova-compute:latest
+  DockerNovaLibvirtImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-nova-libvirt:latest
+  DockerNovaMetadataImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-nova-api:latest
+  DockerNovaPlacementConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-nova-placement-api:latest
+  DockerNovaPlacementImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-nova-placement-api:latest
+  DockerNovaSchedulerImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-nova-scheduler:latest
+  DockerNovaVncProxyImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-nova-novncproxy:latest
+  DockerOctaviaApiImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-octavia-api:latest
+  DockerOctaviaConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-octavia-api:latest
+  DockerOctaviaHealthManagerImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-octavia-health-manager:latest
+  DockerOctaviaHousekeepingImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-octavia-housekeeping:latest
+  DockerOctaviaWorkerImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-octavia-worker:latest
+  DockerOpenvswitchImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-neutron-openvswitch-agent:latest
+  DockerRabbitmqConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-rabbitmq:latest
+  DockerRabbitmqImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-rabbitmq:latest
+  DockerRedisConfigImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-redis:latest
+  DockerRedisImage: 10.12.134.15:5000/pod2-dev-osp13-osp13_containers-redis:latest

@@ -1,0 +1,18 @@
+- local_loop:
+    name: image0
+    partitioning:
+      label: mbr
+      partitions:
+      - name: root
+        flags: [ boot, primary ]
+        size: 6GiB
+        mkfs:
+          type: xfs
+          mount:
+            mount_point: /
+            fstab:
+              options: "defaults"
+              fsck-passno: 1
+      - name: docker
+        size: 1GiB
+

@@ -1,0 +1,50 @@
+---
+nodes:
+#- name: baremetal1
+#  driver: pxe_ipmitool
+#  driver_info:
+#    ipmi_address: 10.12.32.26
+#    ipmi_username: admin
+#    ipmi_password: redhat
+#    ipmi_port: 6034
+#  properties:
+#    cpus: 4
+#    cpu_arch: x86_64
+#    memory_mb: 6144
+#    local_gb: 40
+#    root_device:
+#        name: /dev/vda1
+#  ports:
+#    - address: 52:54:00:75:21:ca
+#- name: baremetal2
+#  driver: pxe_ipmitool
+#  driver_info:
+#    ipmi_address: 10.12.32.26
+#    ipmi_username: admin
+#    ipmi_password: redhat
+#    ipmi_port: 6035
+#  properties:
+#    cpus: 4
+#    cpu_arch: x86_64
+#    memory_mb: 6144
+#    local_gb: 40
+#    root_device:
+#        name: /dev/vda1
+#  ports:
+#    - address: 52:54:00:fa:4d:ef
+- name: baremetal3
+  driver: pxe_ipmitool
+  driver_info:
+    ipmi_address: 10.12.32.26
+    ipmi_username: admin
+    ipmi_password: redhat
+    ipmi_port: 6036
+  properties:
+    cpus: 4
+    cpu_arch: x86_64
+    memory_mb: 6144
+    local_gb: 40
+    root_device:
+        name: /dev/vda1
+  ports:
+    - address: 52:54:00:9c:53:b0

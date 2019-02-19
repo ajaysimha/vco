@@ -1,0 +1,41 @@
+---
+nodes:
+- mac:
+  - 52:54:00:a5:07:27
+  name: ceph1
+  cpu: '4'
+  memory: '6144'
+  disk: '40'
+  arch: x86_64
+  pm_type: ipmi
+  pm_port: 6031
+  pm_user: admin
+  pm_password: redhat
+  pm_addr: 10.12.32.26
+  capabilities: profile:ceph-storage,boot_option:local
+- mac:
+  - 52:54:00:65:a4:fb
+  name: ceph2
+  cpu: '4'
+  memory: '6144'
+  disk: '40'
+  arch: x86_64
+  pm_type: ipmi
+  pm_port: 6032
+  pm_user: admin
+  pm_password: redhat
+  pm_addr: 10.12.32.26
+  capabilities: profile:ceph-storage,boot_option:local
+- mac:
+  - 52:54:00:c9:54:68
+  name: ceph3
+  cpu: '4'
+  memory: '6144'
+  disk: '40'
+  arch: x86_64
+  pm_type: ipmi
+  pm_port: 6033
+  pm_user: admin
+  pm_password: redhat
+  pm_addr: 10.12.32.26
+  capabilities: profile:ceph-storage,boot_option:local

@@ -1,0 +1,22 @@
+parameter_defaults:
+  CinderBackupBackend: ceph
+  CephAnsibleDisksConfig:
+    osd_scenario: collocated
+    devices:
+      - /dev/sda
+      - /dev/sdb
+      - /dev/sdc
+  CephConfigOverrides:
+    osd_pool_default_pg_num: 8
+    osd_pool_default_pgp_num: 8
+    mon_clock_drift_allowed: 10
+  CephPools:
+    - name: volumes
+      pg_num: 64
+    - name: vms
+      pg_num: 64
+    - name: images
+      pg_num: 64
+
+  CephStorageCount: 3
+  OvercloudCephStorageFlavor: ceph-storage

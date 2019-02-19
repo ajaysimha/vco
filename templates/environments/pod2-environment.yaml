@@ -1,0 +1,116 @@
+
+parameter_defaults:
+  InternalApiNetCidr: 172.17.0.0/24
+  StorageNetCidr: 172.18.0.0/24
+  StorageMgmtNetCidr: 172.19.0.0/24
+  TenantNetCidr: 172.16.0.0/24
+  ExternalNetCidr: 10.12.134.0/24
+  ControlPlaneSubnetCidr: '24'
+  InternalApiAllocationPools: [{'start': '172.17.0.20', 'end': '172.17.0.200'}]
+  StorageAllocationPools: [{'start': '172.18.0.20', 'end': '172.18.0.200'}]
+  StorageMgmtAllocationPools: [{'start': '172.19.0.20', 'end': '172.19.0.200'}]
+  TenantAllocationPools: [{'start': '172.16.0.20', 'end': '172.16.0.200'}]
+  # Leave room if the external network is also used for floating IPs
+  ExternalAllocationPools: [{'start': '10.12.134.60', 'end': '10.12.134.100'}]
+  ExternalInterfaceDefaultRoute: 10.12.134.254
+  ControlPlaneDefaultRoute: 10.12.34.254
+  EC2MetadataIp: 10.12.34.20
+  DnsServers: ["10.12.32.1"]
+  InternalApiNetworkVlanID: 3134
+  StorageNetworkVlanID: 3234
+  StorageMgmtNetworkVlanID: 3334
+  TenantNetworkVlanID: 3034
+  ExternalNetworkVlanID: 1134
+  NeutronExternalNetworkBridge: "''"
+  BondInterfaceOvsOptions: "mode=active-backup"
+
+  BaremetalNetCidr: 10.12.134.0/24
+  BaremetalAllocationPools: [{'start': '10.12.134.25', 'end': '10.12.134.30'}]
+  BaremetalNetworkVlanID: 1134
+
+
+  controllerExtraConfig:
+    neutron::agents::dhcp::enable_isolated_metadata: true
+
+#  rhel_reg_activation_key: "osp13-dev"
+#  rhel_reg_auto_attach: ""
+#  rhel_reg_base_url: ""
+#  rhel_reg_environment: ""
+#  rhel_reg_force: "true"
+#  rhel_reg_machine_name: ""
+#  rhel_reg_org: "brentandkrysti"
+#  rhel_reg_password: ""
+#  rhel_reg_pool_id: ""
+#  rhel_reg_release: ""
+#  rhel_reg_repos: ""
+#  rhel_reg_sat_url: "http://satellite6.home.brentandkrysti.com"
+#  rhel_reg_server_url: ""
+#  rhel_reg_service_level: ""
+#  rhel_reg_user: ""
+#  rhel_reg_type: ""
+#  rhel_reg_method: "satellite"
+#  rhel_reg_sat_repo: "rhel-7-server-satellite-tools-6.2-rpms"
+#  rhel_reg_http_proxy_host: ""
+#  rhel_reg_http_proxy_port: ""
+#  rhel_reg_http_proxy_username: ""
+#  rhel_reg_http_proxy_password: ""
+
+  NovaReservedHostMemory: 1024
+  OvercloudControlFlavor: control
+  OvercloudComputeFlavor: compute
+  ControllerCount: 3
+  ComputeCount: 2
+
+
+  NovaSchedulerDefaultFilters:
+    - RetryFilter
+    - AvailabilityZoneFilter
+    - AggregateRamFilter
+    - AggregateCoreFilter
+    - ComputeFilter
+    - AggregateInstanceExtraSpecsFilter
+    - ComputeCapabilitiesFilter
+    - ImagePropertiesFilter
+    - ServerGroupAntiAffinityFilter
+    - ServerGroupAffinityFilter
+    - RamFilter
+    - DiskFilter
+
+  IronicCleaningDiskErase: metadata
+#  IronicCleaningNetwork:
+
+  ServiceNetMap:
+    IronicApiNetwork: external
+    IronicNetwork: external
+
+  SSLRootCertificate: |
+    -----BEGIN CERTIFICATE-----
+    MIIDjTCCAnWgAwIBAgIQQ+k4pX94S1e79ah9tYcpXTANBgkqhkiG9w0BAQsFADBQ
+    MSAwHgYDVQQDDBdMb2NhbCBTaWduaW5nIEF1dGhvcml0eTEsMCoGA1UEAwwjNDNl
+    OTM4YTUtN2Y3ODRiNTctYmJmNWE4N2QtYjU4NzI5NWQwHhcNMTgwODA5MDk0NzM1
+    WhcNMTkwODA5MDk0NzM1WjBQMSAwHgYDVQQDDBdMb2NhbCBTaWduaW5nIEF1dGhv
+    cml0eTEsMCoGA1UEAwwjNDNlOTM4YTUtN2Y3ODRiNTctYmJmNWE4N2QtYjU4NzI5
+    NWQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDi+Xhd0NBL9ghBiuwP
+    ofI7JytwzETWXq6mOvvIJL1G3BJIVxhExIrLuFm4WJfcT0/fQGgn5Ty1vV9Hi5iE
+    uenI+8kgpcBicyHc+YrAL4pZ1BwqZDkTQcj8TcNbjdxs8y6M2+xwiw/omxR8Y2R4
+    RvPeOfw16I/Ck1rVkyJGmt0niAZOwOxPU0Dx+jDFTSc93wbj2i+TyUHZudOwz/DD
+    pnEJogwngZI2fTPACygUOUDq4nLkCTmPbSTYVmd8DhQ8nOIwJ9Ymd8rjwOUUbQBG
+    KRBIWhktA5PyLb7FsXw67V8m+Irb+lhgs3boRxN4RBScSdEmAlKkVv1sm+tHuF84
+    WqmhAgMBAAGjYzBhMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFGRyQBQ/E/9I
+    2Qa+GaC4U7FmBhz5MB8GA1UdIwQYMBaAFGRyQBQ/E/9I2Qa+GaC4U7FmBhz5MA4G
+    A1UdDwEB/wQEAwIBhjANBgkqhkiG9w0BAQsFAAOCAQEAQIoB9OemoOiwegE/TLpG
+    k0QqOImiEFQTtrp5gJn1cLlWBnakJAd5oJxg0mryOmnjKSeHZRCWd+xHLKz5I+Fq
+    h7rt4UAXC3Zc0DB3TXVaEU9aF2j7kmYYAUG86Rd2OSV6ozYOToc7DH30+VC+PNiB
+    9v33DgexA8yofQNr/d+IIH6siy9jvmsVzYQHmEzxWO5prtrAnv+T/GVBSIERxbOu
+    rcqalYXChvhg7C8DxAZqvwJYYAq2KH6vC/i+IJ24pXKN0FYVrO1IRY2wWcRahloL
+    0cmcLy1jaYvJyjk1K5gOOgTBYrpHarK2/mRs4VVGdP7HFhDzX/HxCXM50929k3Jp
+    lA==
+    -----END CERTIFICATE-----
+
+
+  PublicVirtualFixedIPs: [{'ip_address':'10.12.134.19'}]
+  ControllerIPs:
+    external:
+    - 10.12.134.50
+    - 10.12.134.51
+    - 10.12.134.52

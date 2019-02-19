@@ -1,0 +1,62 @@
+---
+nodes:
+- mac:
+  - b8:2a:72:d2:ff:5c
+  name: controller1
+  cpu: '4'
+  memory: '6144'
+  disk: '40'
+  arch: x86_64
+  pm_type: pxe_ipmitool
+  pm_user: root
+  pm_password: pod2drac
+  pm_addr: 10.12.30.21
+  capabilities: profile:control,boot_option:local
+- mac:
+  - b8:2a:72:d3:8f:0b
+  name: controller2
+  cpu: '4'
+  memory: '6144'
+  disk: '40'
+  arch: x86_64
+  pm_type: pxe_ipmitool
+  pm_user: root
+  pm_password: pod2drac
+  pm_addr: 10.12.30.22
+  capabilities: profile:control,boot_option:local
+- mac:
+  - b8:2a:72:d2:d7:Fb
+  name: controller3
+  cpu: '4'
+  memory: '6144'
+  disk: '40'
+  arch: x86_64
+  pm_type: pxe_ipmitool
+  pm_user: root
+  pm_password: pod2drac
+  pm_addr: 10.12.30.23
+  capabilities: profile:control,boot_option:local
+- mac:
+  - b8:2a:72:d2:d9:88
+  name: compute1
+  cpu: '4'
+  memory: '6144'
+  disk: '40'
+  arch: x86_64
+  pm_type: pxe_ipmitool
+  pm_user: root
+  pm_password: pod2drac
+  pm_addr: 10.12.30.24
+  capabilities: profile:compute,boot_option:local
+- mac:
+  - b8:2a:72:d3:73:47
+  name: compute2
+  cpu: '4'
+  memory: '6144'
+  disk: '40'
+  arch: x86_64
+  pm_type: pxe_ipmitool
+  pm_user: root
+  pm_password: pod2drac
+  pm_addr: 10.12.30.25
+  capabilities: profile:compute,boot_option:local
