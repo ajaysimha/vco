@@ -109,7 +109,7 @@ resources:
                     get_param: EC2MetadataIp
                 members:
                 - type: interface
-                  name: nic1
+                  name: ens1f0
                   # force the MAC address of the bridge to this interface
                   primary: true
                 - type: vlan
@@ -146,6 +146,11 @@ resources:
                   - default: true
                     next_hop:
                       get_param: ExternalInterfaceDefaultRoute
+              - type: interface
+                name: ens1f1
+                use_dhcp: false
+                defroute: false
+                             
 # we can't really do this as the 134 network is already used by public api - the vip will work fine though.
 #                - type: vlan
 #                  vlan_id:
