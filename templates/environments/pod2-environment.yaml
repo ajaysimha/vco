@@ -1,32 +1,33 @@
 
 parameter_defaults:
-  InternalApiNetCidr: 172.17.0.0/24
-  StorageNetCidr: 172.18.0.0/24
-  StorageMgmtNetCidr: 172.19.0.0/24
-  TenantNetCidr: 172.16.0.0/24
-  ExternalNetCidr: 10.12.134.0/24
+  InternalApiNetCidr: 192.168.120.0/24
+  StorageNetCidr: 192.168.130.0/24
+  StorageMgmtNetCidr: 192.168.140.0/24
+  TenantNetCidr: 192.168.150.0/24
+  ExternalNetCidr: 10.255.5.192/27
   ControlPlaneSubnetCidr: '24'
-  InternalApiAllocationPools: [{'start': '172.17.0.20', 'end': '172.17.0.200'}]
-  StorageAllocationPools: [{'start': '172.18.0.20', 'end': '172.18.0.200'}]
-  StorageMgmtAllocationPools: [{'start': '172.19.0.20', 'end': '172.19.0.200'}]
-  TenantAllocationPools: [{'start': '172.16.0.20', 'end': '172.16.0.200'}]
+  InternalApiAllocationPools: [{'start': '192.168.120.10', 'end': '192.168.120.120'}]
+  StorageAllocationPools: [{'start': '192.168.130.10', 'end': '192.168.130.120'}]
+  StorageMgmtAllocationPools: [{'start': '192.168.140.10', 'end': '192.168.140.120'}]
+  TenantAllocationPools: [{'start': '192.168.150.10', 'end': '192.168.150.120'}]
   # Leave room if the external network is also used for floating IPs
-  ExternalAllocationPools: [{'start': '10.12.134.60', 'end': '10.12.134.100'}]
-  ExternalInterfaceDefaultRoute: 10.12.134.254
-  ControlPlaneDefaultRoute: 10.12.34.254
-  EC2MetadataIp: 10.12.34.20
-  DnsServers: ["10.12.32.1"]
-  InternalApiNetworkVlanID: 3134
-  StorageNetworkVlanID: 3234
-  StorageMgmtNetworkVlanID: 3334
-  TenantNetworkVlanID: 3034
-  ExternalNetworkVlanID: 1134
+  ExternalAllocationPools: [{'start': '10.255.5.201', 'end': '10.255.5.202'}]
+  ExternalInterfaceDefaultRoute: 10.255.5.193
+  ControlPlaneDefaultRoute: 192.168.66.18
+  EC2MetadataIp: 192.168.66.18
+  DnsServers: ["10.255.0.1"]
+  NtpServer:  ["192.168.66.18"]
+  InternalApiNetworkVlanID: 120
+  StorageNetworkVlanID: 130
+  StorageMgmtNetworkVlanID: 140
+  TenantNetworkVlanID: 150
+  ExternalNetworkVlanID: 576
   NeutronExternalNetworkBridge: "''"
   BondInterfaceOvsOptions: "mode=active-backup"
 
-  BaremetalNetCidr: 10.12.134.0/24
-  BaremetalAllocationPools: [{'start': '10.12.134.25', 'end': '10.12.134.30'}]
-  BaremetalNetworkVlanID: 1134
+#  BaremetalNetCidr: 10.12.134.0/24
+#  BaremetalAllocationPools: [{'start': '10.12.134.25', 'end': '10.12.134.30'}]
+#  BaremetalNetworkVlanID: 1134
 
 
   controllerExtraConfig:
@@ -58,8 +59,8 @@ parameter_defaults:
   NovaReservedHostMemory: 1024
   OvercloudControlFlavor: control
   OvercloudComputeFlavor: compute
-  ControllerCount: 3
-  ComputeCount: 2
+  ControllerCount: 1
+  ComputeCount: 1
 
 
   NovaSchedulerDefaultFilters:
@@ -76,12 +77,12 @@ parameter_defaults:
     - RamFilter
     - DiskFilter
 
-  IronicCleaningDiskErase: metadata
+#  IronicCleaningDiskErase: metadata
 #  IronicCleaningNetwork:
 
-  ServiceNetMap:
-    IronicApiNetwork: external
-    IronicNetwork: external
+#  ServiceNetMap:
+#    IronicApiNetwork: external
+#    IronicNetwork: external
 
   SSLRootCertificate: |
     -----BEGIN CERTIFICATE-----
@@ -108,9 +109,9 @@ parameter_defaults:
     -----END CERTIFICATE-----
 
 
-  PublicVirtualFixedIPs: [{'ip_address':'10.12.134.19'}]
+  PublicVirtualFixedIPs: [{'ip_address':'10.255.5.201'}]
   ControllerIPs:
     external:
-    - 10.12.134.50
-    - 10.12.134.51
-    - 10.12.134.52
+    - 10.255.5.207
+    - 10.255.5.208
+    - 10.255.5.209
