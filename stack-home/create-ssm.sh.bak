@@ -1,0 +1,12 @@
+openstack server create SSM-100-1 \
+--flavor AN-SSM \
+--image an-payload-8.4.1.0-53.REL \
+--nic net-id=808d1cb2-ea98-46d0-abf1-b965479a688e,port-id=6767c04e-4165-4e75-85a6-b0d8f50f4d6e \
+--nic net-id=0f484ddd-ecf3-4443-837f-e85cfc8ab435,port-id=fb82a77b-7963-4d77-a670-6daf64f24e5d \
+--nic net-id=739f2687-b1d4-4db6-8d96-e738c7956b6b,port-id=f132c93d-b3bf-4914-bcbd-611130be9aca\
+--nic net-id=0c817a6a-fcab-4133-8d01-d741e423c231,port-id=8f59a3c2-f7c2-4ab7-a2ab-26b4c89b1272 \
+--nic net-id=6034e351-7e7e-4a36-a46b-362c4e18167b,port=802ce9c8-4ba7-43c1-8067-ed040f35198f \
+--nic net-id=43fde37e-2c61-4bd7-b35d-4f28fc5ec9f3,port=a447ceef-728b-46fa-95d8-a386636e04d1 \
+--nic net-id=ecc66bfa-0949-475c-b64a-b7c47da2644f,bffcc74a-6927-4f3a-8034-c75a8e701077 \
+--config-drive True \
+--user-data /home/affirmed/SSM-100-5-sriov-red-config.xml 

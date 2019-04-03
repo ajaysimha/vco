@@ -1,0 +1,13 @@
+heat_template_version: 2015-04-30
+
+resources:
+  the_resource:
+    type: OS::Neutron::ProviderNet
+    properties:
+      admin_state_up: yes
+      name: test-net
+      shared: yes
+      physical_network: datacentre
+      network_type: vlan
+      segmentation_id: 666
+      

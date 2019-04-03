@@ -1,10 +1,6 @@
-# NOTE: This template is now deprecated, and is only included for compatibility
-# when upgrading a deployment where this template was originally used. For new
-# deployments, remove the External network from the Controller role and set
-# default_route_networks to ['ControlPlane'].
 heat_template_version: queens
 description: >
-  Software Config to drive os-net-config to configure VLANs for the controller role. No external IP is configured.
+  Software Config to drive os-net-config to configure VLANs for the Controller role.
 parameters:
   ControlPlaneIp:
     default: ''
@@ -111,12 +107,9 @@ resources:
                 - ip_netmask: 169.254.169.254/32
                   next_hop:
                     get_param: EC2MetadataIp
-                - default: true
-                  next_hop:
-                    get_param: ControlPlaneDefaultRoute
                 members:
                 - type: interface
-                  name: nic1
+                  name: ens1f0
                   # force the MAC address of the bridge to this interface
                   primary: true
                 - type: vlan
@@ -145,16 +138,30 @@ resources:
                       get_param: TenantIpSubnet
                 - type: vlan
                   vlan_id:
-                    get_param: ManagementNetworkVlanID
+                    get_param: ExternalNetworkVlanID
                   addresses:
                   - ip_netmask:
-                      get_param: ManagementIpSubnet
-                - type: vlan
-                  vlan_id:
-                    get_param: BaremetalNetworkVlanID
-                  addresses:
-                  - ip_netmask:
-                      get_param: BaremetalIpSubnet
+                      get_param: ExternalIpSubnet
+                  routes:
+                  - default: true
+                    next_hop:
+                      get_param: ExternalInterfaceDefaultRoute
+              - type: ovs_bridge
+                name: br-link0
+                use_dhcp: true
+                mtu: 9000
+                members:
+                - type: interface
+                  name: ens1f1
+                  mtu: 9000
+                             
+# we can't really do this as the 134 network is already used by public api - the vip will work fine though.
+#                - type: vlan
+#                  vlan_id:
+#                    get_param: BaremetalNetworkVlanID
+#                  addresses:
+#                  - ip_netmask:
+#                      get_param: BaremetalIpSubnet
 outputs:
   OS::stack_id:
     description: The OsNetConfigImpl resource.

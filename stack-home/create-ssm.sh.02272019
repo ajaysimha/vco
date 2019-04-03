@@ -1,0 +1,12 @@
+openstack server create SSM-100-1 \
+--flavor AN-SSM \
+--image an-payload-8.4.1.0-53.REL \
+--port base1_ssm \
+--port oam_vf_ssm \
+--port base2_ssm \
+--port ew1_vf_ssm \
+--port ns1_vf_ssm \
+--port ns2_vf_ssm \
+--port ew2_vf_ssm \
+--config-drive True \
+--user-data /home/affirmed/SSM-100-5-sriov-red-config.xml 

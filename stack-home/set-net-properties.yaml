@@ -1,0 +1,8 @@
+heat_template_version: 2015-04-30
+
+resources:
+  the_resource:
+    type: OS::Neutron::NetworkGateway
+    properties:
+      connections: [{network_id: 11f75b28-eeab-4898-86b0-65cbde2a7459, "segmentation_id": 666}]
+      devices: [{"interface_name": test-net}]

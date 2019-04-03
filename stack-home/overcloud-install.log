@@ -1,0 +1,671 @@
+Started Mistral Workflow tripleo.validations.v1.check_pre_deployment_validations. Execution ID: 0b584f9a-4ac2-44e1-b105-c3e071838773
+Removing the current plan files
+Uploading new plan files
+Started Mistral Workflow tripleo.plan_management.v1.update_deployment_plan. Execution ID: 66e8f10d-6ed8-4353-9282-d5f2e887a889
+Plan updated.
+Processing templates in the directory /tmp/tripleoclient-B2Qwse/tripleo-heat-templates
+Started Mistral Workflow tripleo.plan_management.v1.get_deprecated_parameters. Execution ID: f59d0554-882c-430b-8507-282286acaca9
+WARNING: Following parameters are deprecated and still defined. Deprecated parameters will be removed soon!
+  controllerExtraConfig
+  OvercloudControlFlavor
+WARNING: Following parameters are defined but not used in plan. Could be possible that parameter is valid but currently not used.
+  SSLRootCertificate
+  DockerMysqlClientConfigImage
+  DockerCephDaemonImage
+  BondInterfaceOvsOptions
+Deploying templates in the directory /tmp/tripleoclient-B2Qwse/tripleo-heat-templates
+Started Mistral Workflow tripleo.deployment.v1.deploy_plan. Execution ID: 6ea9ab0b-04ca-47c7-9c83-7a00139f8000
+2019-02-27 01:48:59Z [Networks]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:48:59Z [overcloud-Networks-l35vwoypwmst]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:48:59Z [overcloud-Networks-l35vwoypwmst.StorageMgmtNetwork]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:48:59Z [ServiceNetMap]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:00Z [overcloud-ServiceNetMap-7mk3cziz3n72]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:00Z [overcloud-ServiceNetMap-7mk3cziz3n72]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:00Z [overcloud-Networks-l35vwoypwmst-StorageMgmtNetwork-gekdws3b2gys]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:00Z [overcloud-Networks-l35vwoypwmst.TenantNetwork]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:01Z [ServiceNetMap]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:01Z [overcloud-Networks-l35vwoypwmst-TenantNetwork-ys3sck7vhne2]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:01Z [overcloud-Networks-l35vwoypwmst-StorageMgmtNetwork-gekdws3b2gys]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:01Z [overcloud-Networks-l35vwoypwmst.StorageMgmtNetwork]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:01Z [overcloud-Networks-l35vwoypwmst.StorageNetwork]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:02Z [overcloud-Networks-l35vwoypwmst-TenantNetwork-ys3sck7vhne2]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:02Z [overcloud-Networks-l35vwoypwmst.TenantNetwork]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:02Z [overcloud-Networks-l35vwoypwmst-StorageNetwork-az6mu3mib5pi]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:02Z [overcloud-Networks-l35vwoypwmst.BaremetalNetwork]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:03Z [overcloud-Networks-l35vwoypwmst-StorageNetwork-az6mu3mib5pi]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:03Z [overcloud-Networks-l35vwoypwmst-BaremetalNetwork-e6id76hci35k]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:03Z [overcloud-Networks-l35vwoypwmst.StorageNetwork]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:03Z [overcloud-Networks-l35vwoypwmst.ManagementNetwork]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:04Z [DefaultPasswords]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:04Z [overcloud-Networks-l35vwoypwmst-BaremetalNetwork-e6id76hci35k]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:04Z [overcloud-Networks-l35vwoypwmst.BaremetalNetwork]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:04Z [overcloud-Networks-l35vwoypwmst-ManagementNetwork-xfz6nh6gcp2s]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:04Z [overcloud-Networks-l35vwoypwmst.InternalApiNetwork]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:05Z [overcloud-Networks-l35vwoypwmst-InternalApiNetwork-jtakdzv3wbpt]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:05Z [overcloud-Networks-l35vwoypwmst-ManagementNetwork-xfz6nh6gcp2s]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:05Z [overcloud-Networks-l35vwoypwmst.ManagementNetwork]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:05Z [DefaultPasswords]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:05Z [overcloud-Networks-l35vwoypwmst.ExternalNetwork]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:06Z [overcloud-Networks-l35vwoypwmst-ExternalNetwork-jjvjp4k4l47z]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:06Z [overcloud-Networks-l35vwoypwmst-InternalApiNetwork-jtakdzv3wbpt]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:07Z [overcloud-Networks-l35vwoypwmst.InternalApiNetwork]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:07Z [overcloud-Networks-l35vwoypwmst-ExternalNetwork-jjvjp4k4l47z]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:07Z [overcloud-Networks-l35vwoypwmst.ExternalNetwork]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:07Z [overcloud-Networks-l35vwoypwmst]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:08Z [Networks]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:10Z [BaremetalVirtualIP]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:10Z [RedisVirtualIP]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:11Z [PublicVirtualIP]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:11Z [StorageMgmtVirtualIP]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:11Z [InternalApiVirtualIP]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:11Z [StorageVirtualIP]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:13Z [overcloud-RedisVirtualIP-7pomz47ej6w2]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:13Z [overcloud-InternalApiVirtualIP-bud7ejivztx7]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:13Z [overcloud-BaremetalVirtualIP-vidtemquyhcf]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:13Z [overcloud-PublicVirtualIP-kmat23igz2y3]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:13Z [overcloud-StorageMgmtVirtualIP-hwyuj2amnruz]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:14Z [overcloud-StorageVirtualIP-ricr36pk24ej]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:14Z [overcloud-RedisVirtualIP-7pomz47ej6w2]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:15Z [RedisVirtualIP]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:15Z [overcloud-StorageMgmtVirtualIP-hwyuj2amnruz]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:15Z [overcloud-InternalApiVirtualIP-bud7ejivztx7]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:15Z [overcloud-StorageVirtualIP-ricr36pk24ej]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:15Z [overcloud-PublicVirtualIP-kmat23igz2y3]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:15Z [overcloud-BaremetalVirtualIP-vidtemquyhcf]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:15Z [PublicVirtualIP]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:15Z [StorageMgmtVirtualIP]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:16Z [StorageVirtualIP]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:16Z [InternalApiVirtualIP]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:16Z [BaremetalVirtualIP]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:17Z [VipMap]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:18Z [overcloud-VipMap-tabc3rkogopw]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:18Z [overcloud-VipMap-tabc3rkogopw]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:49:19Z [VipMap]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:19Z [EndpointMap]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:21Z [EndpointMap]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:21Z [ControllerServiceChain]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:21Z [ComputeServiceChain]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:21Z [ComputeSriovServiceChain]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:22Z [overcloud-ComputeServiceChain-bpgee4vjx53t]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:22Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:22Z [overcloud-ComputeServiceChain-bpgee4vjx53t.LoggingConfiguration]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:22Z [overcloud-ControllerServiceChain-3jlg2iegcik5]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:22Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.LoggingConfiguration]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:23Z [overcloud-ControllerServiceChain-3jlg2iegcik5.ServiceChain]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:23Z [overcloud-ComputeServiceChain-bpgee4vjx53t.ServiceChain]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:24Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:24Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain]: UPDATE_COMPLETE  The Resource ServiceChain requires replacement.
+2019-02-27 01:49:24Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:24Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.LoggingConfiguration]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:24Z [overcloud-ControllerServiceChain-3jlg2iegcik5.LoggingConfiguration]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:25Z [overcloud-ComputeServiceChain-bpgee4vjx53t.LoggingConfiguration]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:25Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain]: CREATE_IN_PROGRESS  Stack CREATE started
+2019-02-27 01:49:26Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:27Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.9]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:27Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.9]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:28Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.21]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:29Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.16]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:30Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.41]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:30Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.16]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:30Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.41]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:31Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.8]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:31Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.21]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:31Z [overcloud-ControllerServiceChain-3jlg2iegcik5.LoggingConfiguration]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:32Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.22]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:32Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.3]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:32Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.3]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:32Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.13]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:33Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.28]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:33Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.28]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:33Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.13]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:34Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:49:34Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.35]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:34Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.29]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:34Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.29]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:35Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.11]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:36Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.35]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:36Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.24]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:36Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.8]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:37Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.17]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:38Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.17]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:38Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.11]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:38Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.42]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:38Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.42]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:39Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.22]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:40Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.26]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:41Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.34]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:41Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.55]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:41Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.34]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:42Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.7]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:42Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.26]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:43Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.139]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:43Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.36]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:43Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.75]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:43Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.24]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:43Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.34]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:44Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.34]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:44Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.18]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:45Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.16]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:46Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.1]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:47Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.118]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:47Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.18]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:47Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.50]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:47Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.7]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:48Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.139]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:48Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.35]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:48Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.1]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:49Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.36]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:50Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.19]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:50Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.19]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:50Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.25]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:50Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.7]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:51Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.11]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:51Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.39]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:51Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.38]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:52Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.39]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:52Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.121]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:52Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.0]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:52Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.0]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:52Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.25]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:53Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.16]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:53Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.118]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:53Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.104]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:54Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.4]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:54Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.49]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:54Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.11]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:55Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.12]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:56Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.4]: CREATE_COMPLETE  state changed
+2019-02-27 01:49:56Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.25]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:56Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.26]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:58Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.64]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:58Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.12]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:58Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.15]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:49:58Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.37]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:49:59Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.55]: UPDATE_COMPLETE  state changed
+2019-02-27 01:49:59Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.35]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:00Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.40]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:00Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.33]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:01Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.38]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:01Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.37]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:02Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.81]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:02Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.23]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:02Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.2]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:02Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.40]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:03Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.33]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:05Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.23]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:06Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.18]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:06Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.15]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:07Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.5]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:07Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.5]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:07Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.22]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:08Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.37]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:08Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.22]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:08Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.1]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:09Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.2]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:09Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.20]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:10Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.2]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:10Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.6]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:10Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.6]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:11Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.75]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:11Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.8]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:13Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.25]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:13Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.24]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:13Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.26]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:14Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.27]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:14Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.38]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:14Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.36]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:14Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.7]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:14Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.14]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:14Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.14]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:15Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.18]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:16Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.4]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:16Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.52]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:17Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.104]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:17Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.30]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:17Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.37]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:17Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.33]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:17Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.36]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:18Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.30]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:19Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.12]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:20Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.2]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:21Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.11]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:21Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.121]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:21Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.15]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:21Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.27]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:21Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.32]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:21Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.32]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:21Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.81]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:21Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.38]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:21Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.50]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:25Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.12]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:27Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.36]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:28Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.12]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:28Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.48]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:29Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.31]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:29Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.10]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:50:30Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.10]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:33Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.51]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:33Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.64]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:33Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.49]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:34Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.11]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:34Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.83]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:35Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.106]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:35Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.1]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:37Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.31]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:37Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.12]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:39Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.107]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:39Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.23]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:39Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.23]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:39Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.130]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:40Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.8]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:40Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.33]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:41Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.107]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:42Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.14]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:44Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.24]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:46Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2.15]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:46Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.52]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:46Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.14]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:46Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.130]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:47Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.36]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:49Z [overcloud-ComputeServiceChain-bpgee4vjx53t-ServiceChain-vbncdd5cqfm2]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:50:49Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain.20]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:49Z [overcloud-ComputeServiceChain-bpgee4vjx53t.ServiceChain]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:51Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain]: CREATE_COMPLETE  Stack CREATE completed successfully
+2019-02-27 01:50:52Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain]: CREATE_COMPLETE  state changed
+2019-02-27 01:50:52Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.48]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:52Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.86]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:53Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.83]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:56Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.132]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:56Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.4]: UPDATE_COMPLETE  state changed
+2019-02-27 01:50:57Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.16]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:50:57Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.51]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:00Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.46]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:00Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.106]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:00Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.86]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:04Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.90]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:05Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.3]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:07Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.132]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:08Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.16]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:12Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.13]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:13Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.46]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:16Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.13]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:16Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.120]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:16Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.90]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:18Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.3]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:18Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.41]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:20Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.37]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:20Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.41]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:22Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.140]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:23Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.120]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:26Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.140]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:28Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.82]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:29Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.56]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:29Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.37]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:31Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.82]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:34Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.137]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:37Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.137]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:38Z [overcloud-ComputeServiceChain-bpgee4vjx53t]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:51:40Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.63]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:40Z [ComputeServiceChain]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:41Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.101]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:41Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.56]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:41Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:51:42Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws]: DELETE_IN_PROGRESS  Stack DELETE started
+2019-02-27 01:51:42Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.63]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:42Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.100]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:46Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.134]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:47Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.28]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:51:47Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.28]: DELETE_COMPLETE  state changed
+2019-02-27 01:51:48Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.21]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:51:49Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.20]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:51:49Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.135]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:50Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.21]: DELETE_COMPLETE  state changed
+2019-02-27 01:51:50Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.134]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:51Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.7]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:51:51Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.138]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:51Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.37]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:51:52Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.30]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:51:52Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.30]: DELETE_COMPLETE  state changed
+2019-02-27 01:51:53Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.37]: DELETE_COMPLETE  state changed
+2019-02-27 01:51:53Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.138]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:53Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.23]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:51:53Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.101]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:54Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.18]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:51:54Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.38]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:55Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.10]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:51:55Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.10]: DELETE_COMPLETE  state changed
+2019-02-27 01:51:56Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.24]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:56Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.18]: DELETE_COMPLETE  state changed
+2019-02-27 01:51:56Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.100]: UPDATE_COMPLETE  state changed
+2019-02-27 01:51:57Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.36]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:51:57Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.87]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:57Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.12]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:51:58Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.36]: DELETE_COMPLETE  state changed
+2019-02-27 01:51:58Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.1]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:51:58Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.1]: DELETE_COMPLETE  state changed
+2019-02-27 01:51:58Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.12]: DELETE_COMPLETE  state changed
+2019-02-27 01:51:59Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.131]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:51:59Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.31]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:51:59Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.31]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:00Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.19]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:00Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.19]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:00Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.47]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:00Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.103]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:00Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.135]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:02Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.38]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:02Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.7]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:02Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.23]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:03Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.27]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:03Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.47]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:04Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.3]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:04Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.3]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:05Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.38]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:05Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.20]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:05Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.22]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:05Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.22]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:05Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.53]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:06Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.94]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:06Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.14]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:06Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.14]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:07Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.27]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:07Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.16]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:08Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.13]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:08Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.13]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:09Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.108]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:10Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.38]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:10Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.131]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:10Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.24]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:11Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.0]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:12Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.11]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:12Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.15]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:13Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.42]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:13Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.80]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:13Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.42]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:13Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.33]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:13Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.33]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:14Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.0]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:14Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.53]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:14Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.87]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:14Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.80]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:15Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.24]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:16Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.119]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:16Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.41]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:16Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.41]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:16Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.105]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:16Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.16]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:16Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.4]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:16Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.4]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:17Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.103]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:18Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.2]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:19Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.39]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:19Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.39]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:20Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.24]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:20Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.6]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:20Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.6]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:20Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.54]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:21Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.108]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:22Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.2]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:22Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.35]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:23Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.15]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:23Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.15]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:24Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.94]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:24Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.8]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:25Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.61]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:25Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.35]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:25Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.9]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:25Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.9]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:28Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.17]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:28Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.25]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:28Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.17]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:28Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.99]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:29Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.97]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:29Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.2]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:29Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.34]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:30Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.15]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:31Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.5]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:31Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.34]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:31Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.5]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:32Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.29]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:32Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.29]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:33Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.119]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:33Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.40]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:34Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.8]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:34Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.40]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:35Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.2]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:35Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.32]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:35Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.25]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:35Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.11]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:35Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7-ServiceChain-675znfgnqfws.26]: DELETE_IN_PROGRESS  state changed
+2019-02-27 01:52:37Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7.ServiceChain]: DELETE_COMPLETE  state changed
+2019-02-27 01:52:37Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.105]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:37Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.61]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:37Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.54]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:37Z [overcloud-ComputeSriovServiceChain-rgwrnkz64pv7]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:52:38Z [ComputeSriovServiceChain]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:39Z [ComputeSriovServiceChainRoleData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:52:39Z [ComputeSriovServiceChainRoleData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:39Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.99]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:41Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l.97]: UPDATE_COMPLETE  state changed
+2019-02-27 01:52:42Z [overcloud-ControllerServiceChain-3jlg2iegcik5-ServiceChain-3hwspwcgdq7l]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:52:42Z [overcloud-ControllerServiceChain-3jlg2iegcik5.ServiceChain]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:02Z [overcloud-ControllerServiceChain-3jlg2iegcik5.DockerConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:03Z [overcloud-ControllerServiceChain-3jlg2iegcik5.DockerConfig]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:04Z [overcloud-ControllerServiceChain-3jlg2iegcik5]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:53:04Z [ControllerServiceChain]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:05Z [ControllerServiceChainRoleData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:05Z [ControllerServiceChainRoleData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:06Z [ComputeSriovServiceConfigSettings]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:06Z [ComputeSriovServiceConfigSettings]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:06Z [Compute]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:06Z [ComputeSriovMergedConfigSettings]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:06Z [ComputeSriov]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:06Z [ComputeSriovMergedConfigSettings]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:07Z [ControllerServiceConfigSettings]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:07Z [Compute]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:07Z [overcloud-ComputeSriov-b3qdrm6oji6i]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:53:07Z [ControllerServiceConfigSettings]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:07Z [overcloud-ComputeSriov-b3qdrm6oji6i.1]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:07Z [ControllerMergedConfigSettings]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:07Z [ControllerMergedConfigSettings]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:07Z [Controller]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:08Z [ComputeIpListMap]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:08Z [overcloud-Controller-wqifg5ie7ctq]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:53:08Z [overcloud-ComputeSriov-b3qdrm6oji6i.2]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:08Z [overcloud-Controller-wqifg5ie7ctq.0]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:08Z [overcloud-ComputeIpListMap-mxbz47xvxbvw]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:53:09Z [overcloud-ComputeSriov-b3qdrm6oji6i.0]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:10Z [overcloud-ComputeIpListMap-mxbz47xvxbvw]: UPDATE_COMPLETE  Stack UPDATE completed successfully
+2019-02-27 01:53:10Z [overcloud-ComputeSriov-b3qdrm6oji6i.3]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:10Z [ComputeIpListMap]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:10Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:53:11Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:53:11Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:53:11Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.NodeUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:11Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.UpdateConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:12Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.RoleUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:13Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.NodeUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:13Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.NodeUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:13Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.NodeAdminUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:14Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:53:14Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.NodeUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:14Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.UpdateConfig]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:14Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.NodeAdminUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:14Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a]: UPDATE_IN_PROGRESS  Stack UPDATE started
+2019-02-27 01:53:14Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.NodeAdminUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:15Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.RoleUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:15Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.RoleUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:15Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.UpdateConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:15Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.NodeUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:16Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.NodeUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:16Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.NodeAdminUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:16Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.UpdateConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:16Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.RoleUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:16Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.NodeAdminUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:16Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.NodeAdminUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:16Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.RoleUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:17Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.RoleUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:17Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.UpdateConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:17Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.UpdateConfig]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:17Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.NodeAdminUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:18Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.UpdateConfig]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:18Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.RoleUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:18Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.RoleUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:18Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.RoleUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:18Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.UpdateConfig]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:19Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.StoragePort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:19Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.ExternalPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:19Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.NodeAdminUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:19Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.PreNetworkConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:19Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.BaremetalPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:19Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.NodeUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:19Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.InternalApiPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:19Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.NodeUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:19Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.StorageMgmtPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:19Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.ManagementPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:19Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.RoleUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:20Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.TenantPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:20Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.NodeAdminUserData]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:20Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.UpdateConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:21Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.BaremetalPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:21Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.TenantPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:21Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.InternalApiPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:21Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.ExternalPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:21Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.PreNetworkConfig]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:21Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.BaremetalPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:21Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.StorageMgmtPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:21Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.PreNetworkConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:21Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.ManagementPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:21Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.StoragePort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:22Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.NodeUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:22Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.ManagementPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:22Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.ExternalPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:22Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.StoragePort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:23Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.ManagementPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:23Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.TenantPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:23Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.NodeUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:23Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.InternalApiPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:23Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.PreNetworkConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:23Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.BaremetalPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:23Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.NodeAdminUserData]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:23Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.StorageMgmtPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:24Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.UpdateConfig]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:24Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.BaremetalPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:25Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.ExternalPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:25Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.StorageMgmtPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:25Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.ManagementPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:27Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.ManagementPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:27Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.ExternalPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:28Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.BaremetalPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:28Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.StorageMgmtPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:29Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.StoragePort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:31Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.ExternalPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:31Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.StorageMgmtPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:32Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.TenantPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:32Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.InternalApiPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:33Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.InternalApiPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:33Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.StoragePort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:33Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.TenantPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:33Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.ExternalPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:33Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.StoragePort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:33Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.ManagementPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:33Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.InternalApiPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:33Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.ExternalPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:33Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.BaremetalPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:34Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.ManagementPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:34Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.StorageMgmtPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:34Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.StorageMgmtPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:34Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.StoragePort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:34Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.PreNetworkConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:34Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.TenantPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:34Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.BaremetalPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:34Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.PreNetworkConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:34Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.InternalApiPort]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:36Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.TenantPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:36Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.TenantPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:36Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.InternalApiPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:36Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.StoragePort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:37Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.ExternalPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:38Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.ManagementPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:38Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.ManagementPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:38Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.StorageMgmtPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:39Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.BaremetalPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:39Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.ExternalPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:39Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.NetIpMap]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:40Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.NetworkConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:40Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.StorageMgmtPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:40Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.BaremetalPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:42Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.NetIpMap]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:42Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.NetworkConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:43Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.NetworkConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:43Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.NetIpMap]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:45Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.NetIpMap]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:45Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.NetworkConfig]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:45Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.ControllerConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:45Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.ControllerConfig]: UPDATE_COMPLETE  The Resource ControllerConfig requires replacement.
+2019-02-27 01:53:45Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.ControllerConfig]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:53:45Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.ControllerConfig]: CREATE_COMPLETE  state changed
+2019-02-27 01:53:46Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.NetworkConfig]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:46Z [overcloud-Controller-wqifg5ie7ctq-0-s74krcxckqhv.ControllerDeployment]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:46Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.NetIpMap]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:47Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.ComputeSriovConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:47Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.ComputeSriovConfig]: UPDATE_COMPLETE  The Resource ComputeSriovConfig requires replacement.
+2019-02-27 01:53:47Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.ComputeSriovConfig]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:53:47Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.ComputeSriovConfig]: CREATE_COMPLETE  state changed
+2019-02-27 01:53:47Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.TenantPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:48Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.NetIpMap]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:48Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.NetworkConfig]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:48Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.StoragePort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:48Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.StoragePort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:48Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.ComputeSriovConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:48Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.InternalApiPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:48Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.ComputeSriovConfig]: UPDATE_COMPLETE  The Resource ComputeSriovConfig requires replacement.
+2019-02-27 01:53:49Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.ComputeSriovConfig]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:53:49Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.TenantPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:49Z [overcloud-ComputeSriov-b3qdrm6oji6i-1-oohxwfiia3v2.ComputeSriovConfig]: CREATE_COMPLETE  state changed
+2019-02-27 01:53:49Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.InternalApiPort]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:50Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.NetworkConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:50Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.NetIpMap]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:51Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.NetIpMap]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:51Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.NetworkConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:52Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.NetworkConfig]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:52Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.NetIpMap]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:52Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.ComputeSriovConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:52Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.ComputeSriovConfig]: UPDATE_COMPLETE  The Resource ComputeSriovConfig requires replacement.
+2019-02-27 01:53:52Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.ComputeSriovConfig]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:53:52Z [overcloud-ComputeSriov-b3qdrm6oji6i-0-gbwo3yi2czcc.ComputeSriovConfig]: CREATE_COMPLETE  state changed
+2019-02-27 01:53:53Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.NetIpMap]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:53Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.NetworkConfig]: UPDATE_COMPLETE  state changed
+2019-02-27 01:53:53Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.ComputeSriovConfig]: UPDATE_IN_PROGRESS  state changed
+2019-02-27 01:53:53Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.ComputeSriovConfig]: UPDATE_COMPLETE  The Resource ComputeSriovConfig requires replacement.
+2019-02-27 01:53:53Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.ComputeSriovConfig]: CREATE_IN_PROGRESS  state changed
+2019-02-27 01:53:53Z [overcloud-ComputeSriov-b3qdrm6oji6i-3-gl67mz4onp7a.ComputeSriovConfig]: CREATE_COMPLETE  state changed
+2019-02-27 01:54:03Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe.PreNetworkConfig]: UPDATE_FAILED  resources.PreNetworkConfig: Resource CREATE failed: Error: resources.HostParametersDeployment: Deployment to server failed: deploy_status_code : Deployment exited with non-zero status code: 2
+2019-02-27 01:54:03Z [overcloud-ComputeSriov-b3qdrm6oji6i-2-q5foumgeqvwe]: UPDATE_FAILED  Resource UPDATE failed: resources.PreNetworkConfig: Resource CREATE failed: Error: resources.HostParametersDeployment: Deployment to server failed: deploy_status_code : Deployment exited with non-zero status code: 2
+2019-02-27 01:54:04Z [overcloud-ComputeSriov-b3qdrm6oji6i.2]: UPDATE_FAILED  resources.PreNetworkConfig: resources[2].Resource CREATE failed: Error: resources.HostParametersDeployment: Deployment to server failed: deploy_status_code: Deployment exited with non-zero status code: 2
+2019-02-27 01:54:04Z [overcloud-ComputeSriov-b3qdrm6oji6i]: UPDATE_FAILED  Resource UPDATE failed: resources.PreNetworkConfig: resources[2].Resource CREATE failed: Error: resources.HostParametersDeployment: Deployment to server failed: deploy_status_code: Deployment exited with non-zero status code: 2
+2019-02-27 01:54:05Z [ComputeSriov]: UPDATE_FAILED  resources.PreNetworkConfig: resources.ComputeSriov.resources[2].Resource CREATE failed: Error: resources.HostParametersDeployment: Deployment to server failed: deploy_status_code: Deployment exited with non-zero status code: 2
+2019-02-27 01:54:05Z [overcloud]: UPDATE_FAILED  Resource UPDATE failed: resources.PreNetworkConfig: resources.ComputeSriov.resources[2].Resource CREATE failed: Error: resources.HostParametersDeployment: Deployment to server failed: deploy_status_code: Deployment exited with non-zero status code: 2
+
+ Stack overcloud UPDATE_FAILED 
+
+overcloud.ComputeSriov.2.PreNetworkConfig.HostParametersDeployment:
+  resource_type: OS::Heat::SoftwareDeployment
+  physical_resource_id: a72037dd-c1f1-43a8-bc15-77d47ea5b612
+  status: CREATE_FAILED
+  status_reason: |
+    Error: resources.HostParametersDeployment: Deployment to server failed: deploy_status_code : Deployment exited with non-zero status code: 2
+  deploy_stdout: |
+    ...
+    TASK [Tune-d Configuration] ****************************************************
+    skipping: [localhost]
+    
+    TASK [Tune-d profile activation] ***********************************************
+    fatal: [localhost]: FAILED! => {"changed": true, "cmd": "tuned-adm profile cpu-partitioning", "delta": "0:00:02.386492", "end": "2019-02-27 01:54:01.759165", "failed": true, "msg": "non-zero return code", "rc": 1, "start": "2019-02-27 01:53:59.372673", "stderr": "Cannot load profile(s) 'cpu-partitioning': Assertion 'isolated_cores are set' failed.", "stderr_lines": ["Cannot load profile(s) 'cpu-partitioning': Assertion 'isolated_cores are set' failed."], "stdout": "", "stdout_lines": []}
+    	to retry, use: --limit @/var/lib/heat-config/heat-config-ansible/ca14a0c6-42ac-4fcb-a898-fef0e5edbfce_playbook.retry
+    
+    PLAY RECAP *********************************************************************
+    localhost                  : ok=4    changed=1    unreachable=0    failed=1   
+    
+    (truncated, view all with --long)
+  deploy_stderr: |
+

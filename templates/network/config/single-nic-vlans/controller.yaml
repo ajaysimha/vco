@@ -146,10 +146,14 @@ resources:
                   - default: true
                     next_hop:
                       get_param: ExternalInterfaceDefaultRoute
-              - type: interface
-                name: ens1f1
-                use_dhcp: false
-                defroute: false
+              - type: ovs_bridge
+                name: br-link0
+                use_dhcp: true
+                mtu: 9000
+                members:
+                - type: interface
+                  name: ens1f1
+                  mtu: 9000
                              
 # we can't really do this as the 134 network is already used by public api - the vip will work fine though.
 #                - type: vlan

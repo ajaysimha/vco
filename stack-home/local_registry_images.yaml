@@ -55,6 +55,8 @@ container_images:
   push_destination: 192.168.66.18:8787
 - imagename: registry.access.redhat.com/rhosp13/openstack-neutron-openvswitch-agent:13.0-73
   push_destination: 192.168.66.18:8787
+- imagename: registry.access.redhat.com/rhosp13/openstack-neutron-sriov-agent:13.0-72
+  push_destination: 192.168.66.18:8787
 - imagename: registry.access.redhat.com/rhosp13/openstack-neutron-server:13.0-72
   push_destination: 192.168.66.18:8787
 - imagename: registry.access.redhat.com/rhosp13/openstack-nova-api:13.0-73
@@ -86,4 +88,6 @@ container_images:
 - imagename: registry.access.redhat.com/rhosp13/openstack-swift-object:13.0-65
   push_destination: 192.168.66.18:8787
 - imagename: registry.access.redhat.com/rhosp13/openstack-swift-proxy-server:13.0-67
+  push_destination: 192.168.66.18:8787
+- imagename: registry.access.redhat.com/rhceph/rhceph-3-rhel7:3-20
   push_destination: 192.168.66.18:8787

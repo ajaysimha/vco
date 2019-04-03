@@ -1,0 +1,12 @@
+openstack server create SSM-100-5 \
+--flavor AN-SSM \
+--image an-payload-8.4.1.0-53.REL \
+--port 5503e4fc-8e8a-4e0c-ae29-2515df80950f \
+--port 66abe3b6-676b-4a59-8156-4b27952abeb3 \
+--port 51e80979-128e-4add-8b6e-22a65092c8f8 \
+--port 1b12b3dc-b1cf-4f84-8b6a-dc38cefbf15f \
+--port 5ebe46d3-ec44-4c6a-8ed2-8e79195a3a37 \
+--port 3d89646c-d315-4132-99a5-c1da4a5a4d27 \
+--port 3f1fd6bc-0829-4e89-989e-91ed7f72c82f \
+--config-drive True \
+--user-data /home/affirmed/SSM-100-5-sriov-red-config.xml 
